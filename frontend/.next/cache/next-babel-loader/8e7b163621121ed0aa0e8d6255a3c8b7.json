@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var getHeadData = function getHeadData() {\n  return fetch(\"http://localhost:8000/api\", {\n    method: 'GET'\n  }).then(function (response) {\n    return response.json();\n  })[\"catch\"](function (err) {\n    return console.log(err);\n  });\n};","map":null,"metadata":{},"sourceType":"module"}
